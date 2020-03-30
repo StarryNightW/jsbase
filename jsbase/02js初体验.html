@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!--内嵌式的js-->
+		<script type="text/javascript">
+			/*var guest_name = '旗木卡卡西';
+						var address = '火影村';
+						var age = 30;
+						var email = 'kakaxi@itcast.cn';
+						var salary = 2000;
+						console.log(guest_name);
+						console.log(address);
+						console.log(age);
+						console.log(email);
+						console.log(salary);*/
+
+			/*var myname  = prompt('请输入你的名字')				
+			alert(myname)*/
+
+			/*	var myname = 'zyl';
+				console.log(myname);
+				myname = 'yjl';
+				console.log(myname)
+				*/
+
+			/*交换变量值*/
+			/*	var a = 10,
+				b = 20;
+				console.log(a,b)
+				var t;
+				t = a
+				a = b
+				b = t
+				console.log(a,b)
+				*/
+
+			/*var a = 10;
+			var b = 'zyl';
+			console.log(isNaN(a))
+			console.log(isNaN(b))*/
+
+			/*	console.log('嘿！好久不见！是的     呀，花都开了')*/
+
+			/*var alert_string = '3月10日，查尔斯王子就坐在阿尔贝二世亲王的对面。\n阿尔贝二世亲王办公室19日曾发表声明:"确认阿尔贝二世亲王新冠病毒检测结果呈阳性"'
+			alert(alert_string)*/
+			/*	 	
+				 	var str = prompt("请输入用户名")
+				 	if (str.length<=5) {
+				 		alert("用户名长度过短，存在风险，请重新输入")
+				 	} else{
+				 		alert("验证通过！")
+				 		
+				 	}
+					*/
+			/*console.log('zyl'+'yjl'+'你俩好好过吧')*/
+
+			/*var age = prompt("请输入您的年龄")
+			alert('你今年'+age+'岁了！')*/
+
+			/*var birth_year = prompt();
+			var date=new Date;
+			var now_year = date.getFullYear();
+			var age = now_year - birth_year;
+			
+			console.log(typeof age)
+			console.log(age)
+			alert("您今年的年龄为： "+age+"!对吗?")*/
+
+			/*var num1 = parseInt(prompt("请输入第一个数字"))
+			var num2 = parseInt(prompt("请输入第二个数字"))
+			var sum = num1 + num2
+			alert(sum)*/
+
+			/*var your_name = prompt('请输入您的姓名')
+			var age = prompt('请输入您的年龄')
+			var sex = prompt('请输入您的性别')
+			alert('您的姓名是：'+your_name +'\n您的年龄是：'+age+'\n您的性别是：'+sex)*/
+
+			/*var age = parseInt(prompt('为安全上网，请输入您的年龄：')) 
+			if(age >= 18){
+				alert("欢迎您！")
+			}
+			else{
+				alert("您暂时没有权限！")
+			}*/
+
+			/*var num = 5
+			console.log(++num && ++num || ++num) 
+			console.log(num)*/
+
+			/*	var num = 5
+				var result = num>10?'是真的':'是假的才怪'
+				console.log(result)*/
+
+			/*	var time = prompt("请输入数字")
+			b	var show_time = time <10? ('0'+time) :time
+				alert(show_time)*/
+			
+			
+/*			switch(1) {
+				case 1:
+					console.log(1);					
+				case 2:
+					console.log(2);
+					break;					
+				case 3:
+					console.log(3);
+					break;
+
+			}*/
+			
+			/*for(var i = 1;i<=100;i++){
+				console.log("你认识我吗？")
+			}*/
+			
+		/*	var student_sum = prompt("请输入班级总人数")
+			var score_sum = 0
+			
+			for(var i  = 1;i<= student_sum;i++){
+				var student_score = parseInt(prompt("请输入第"+ i+"个学生成绩："))
+				score_sum += student_score
+			}
+			var average_score = score_sum /student_sum
+			alert("平均成绩计算完毕，从通过F12查看")
+			console.log(average_score)*/
+			
+			/*for(var i = 5; i>=1;i--){
+				var str = ''
+				for(var j = i;j>=1;j --){
+					str = str + '★'					
+				}
+				console.log(str)
+			}*/
+			
+/*			
+			for(var i = 1;i<=9;i++){
+				var result;
+				var str = '';
+				for(var j = 1; j <= i;j++){
+					result = i*j
+					str = str + j +'×'+i +'='+result + '   '
+				}
+				console.log(str)
+			}*/
+			
+		/*	var arr = [1,2,3,4]
+			console.log(arr)
+			console.log(arr[2])*/
+			
+			/*var arr =  [1,2,3,4]
+			arr.length = 5
+			console.log(arr)*/
+			
+			
+/*			
+			function getsum(){
+				sum = 0
+				for(var i = 0;i< arguments.length;i++){
+					sum = sum + arguments[i]
+				}
+				return sum
+			}
+			var a =getsum(1,2,3,4,5)
+			console.log(a)*/
+			
+			/*var keke = {
+				keke_name:'可可',
+				type:'阿拉斯加',
+				age:5,
+				color:'brown',
+				bark:function(){
+					console.log('汪汪汪')
+				},
+				showFilm:function(){
+					console.log('superstar！')
+				}
+			}
+			console.log(keke.keke_name)
+			console.log(keke.type)
+			console.log(keke.color)
+			keke.bark()
+			keke.showFilm()*/
+			
+			function countDonw(time){
+				var now_time = Date.now()
+				var deadline = + new Date(time)
+				var times = deadline-now_time
+				//剩余的总的描述
+				var totle_sec = times/1000  
+				var sec = parseInt(totle_sec%60)
+				sec = sec >10? sec:'0'+sec
+				var min = parseInt(totle_sec/60%60)
+				var hour = parseInt(totle_sec/60/60%24)
+				var day = parseInt(totle_sec / 60 / 60 / 24)
+				min = min >10? min:'0'+min
+				hour = hour >10? hour:'0'+hour
+				day = day >10? day:'0'+day
+				console.log('还剩下'+day+'天'+hour+'时'+min+'分'+sec+'秒')			
+				
+			}
+			countDonw('2020-3-30 00:00:00')
+		</script>
+		
+
+	</head>
+
+	<body>
+		<!--1. 行内式的js-->
+		<!--<input type="button" value="唐伯虎" onclick='alert('秋香姐')" />-->
+	</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--<div class = "box">盒子</div>
+		<div class = "box">盒子</div>
+		<div id = 'nav'>
+			<ul>
+				<li>首页</li>
+				<li>产品</li>
+			</ul>
+		</div>-->
+
+		<button id='btn'>显示当前系统时间</button>
+		<div id = 'type1'>这是一个空格测试        我的前面有8个空格</div>
+		<div id = 'type2'>这是另一个空格测试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我的前面有也有8个空格</div>
+		<script>
+			var type1_text = document.getElementById('type1').innerText
+			var type1_html = document.getElementById('type1').innerHTML
+			var type2_text = document.getElementById('type2').innerText
+			var type2_html = document.getElementById('type2').innerHTML
+			console.log('type1_text的结果是：'+type1_text)
+			console.log('type1_html的结果是：'+type1_html)
+			console.log('type2_text的结果是：'+type2_text)
+			console.log('type2_html的结果是：'+type2_html)
+			
+			
+			
+			//			var boxes = document.getElementsByClassName('box')
+			//			console.log(boxes)
+			//			
+
+			/*var btn = document.getElementById('btn');
+			btn.onclick = function(){
+				alert('aaaaaaaaaa')*/
+
+			/*var btn = document.querySelector('button')
+			var div = document.querySelector('div')
+			btn.onclick = function() {
+				div.innerText = getDate();
+			}
+			div.innerText = getDate();
+
+			function getDate() {
+				var date = new Date();
+				var seperator1 = "-";
+				var seperator2 = ":";
+				var year = date.getFullYear();
+				var month = date.getMonth() + 1;
+				var strDate = date.getDate();
+				if(month >= 1 && month <= 9) {
+					month = "0" + month;
+				}
+				if(strDate >= 0 && strDate <= 9) {
+					strDate = "0" + strDate;
+				}
+				var currentdate = year + seperator1 + month + seperator1 + strDate +
+					" " + date.getHours() + seperator2 + date.getMinutes() +
+					seperator2 + date.getSeconds();
+				return currentdate;
+			}*/
+		</script>
+
+	</body>
+
+</html>
