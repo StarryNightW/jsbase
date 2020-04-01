@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:200px;
+				height:200px;
+				background-color: pink;
+			}
+			
+			.change{
+				background-color: palevioletred;
+				color:#fff;
+				font-size:25px;
+				margin-top:100px
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			文本
+		</div>
+	</body>
+	<script>
+		var div = document.querySelector('div')
+		div.onclick = function(){
+			this.className = 'change'
+		}
+	</script>
+</html>

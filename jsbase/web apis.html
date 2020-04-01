@@ -4,6 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style type="text/css">
+			img{
+				width: 300px
+			}
+		</style>
 	</head>
 
 	<body>
@@ -16,19 +21,57 @@
 			</ul>
 		</div>-->
 
-		<button id='btn'>显示当前系统时间</button>
+<!--		<button id='btn'>显示当前系统时间</button>
 		<div id = 'type1'>这是一个空格测试        我的前面有8个空格</div>
 		<div id = 'type2'>这是另一个空格测试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我的前面有也有8个空格</div>
+		-->
+		
+<!--		<button id = 'before'>换装前</button>
+		<button id = 'after'>换装后</button><br>
+		<img src= "img/taishang.jpg" alt = " "  title="换装前"/>-->
+		
+		<div>张云雷先生，上午好！</div>
+		<img src =" img/taishang.jpg"  />
 		<script>
-			var type1_text = document.getElementById('type1').innerText
+		/*	var type1_text = document.getElementById('type1').innerText
 			var type1_html = document.getElementById('type1').innerHTML
 			var type2_text = document.getElementById('type2').innerText
 			var type2_html = document.getElementById('type2').innerHTML
 			console.log('type1_text的结果是：'+type1_text)
 			console.log('type1_html的结果是：'+type1_html)
 			console.log('type2_text的结果是：'+type2_text)
-			console.log('type2_html的结果是：'+type2_html)
+			console.log('type2_html的结果是：'+type2_html)*/
+			/*切换图片*/
 			
+/*			var before = document.getElementById('before')
+			var after = document.getElementById('after')
+			var img = document.querySelector('img')
+			
+			after.onclick = function(){
+				img.src = 'img/taixia.jpg';
+				img.title = '换装后'
+			}
+			
+			before.onclick = function(){
+				img.src = 'img/taishang.jpg'
+				img.title = '换装前'
+			}*/
+			
+			var ig = document.querySelector('img')
+			var dv = document.querySelector('div')
+			var date = new Date()
+			var h = date.getHours()
+			if(h < 12){
+				ig.src = 'img/taixia.jpg'
+				dv.innerHTML = '张云雷先生，上午好'
+			}else if(h >= 12 && h< 18){
+				ig.src = 'img/taishang.jpg'
+				dv.innerHTML = '张云雷先生，下午好'
+			}
+			else{
+				ig.src = 'img/beauty.jpg'
+				dv.innerHTML = '张云雷先生，晚上好'
+			}
 			
 			
 			//			var boxes = document.getElementsByClassName('box')
